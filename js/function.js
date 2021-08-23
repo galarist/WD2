@@ -1,3 +1,3 @@
 async function header() {
-    content.innerHTML = await (await fetch('inc/header.html')).text();
+    content.innerHTML = await (await fetch('header.html')).text();
 }
