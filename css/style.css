@@ -1,6 +1,7 @@
 body {
     margin: 0;
     width: 100vw;
+    background-color: #e4caca;
 }
 
 ul {
@@ -9,16 +10,20 @@ ul {
     padding: 0;
     overflow: hidden;
     padding: 10px;
-    background-color: aquamarine;
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
 }
 
 ul li {
-    display: inline;
+    margin: 4px;
 }
 
 li a {
     display: inline-block;
     padding: 8px;
-    background-color: #dddddd;
     text-decoration: none;
+    color: #2c2c2c;
+    font-weight: 700;
 }
