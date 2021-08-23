@@ -45,7 +45,7 @@ li a:hover {
 
 .bg-image {
     /* The image used */
-    background-image: url("/img/composited_mobile.png");
+    background-image: url("../img/composited_mobile.png");
 
     /* Full height */
     height: 100%;
@@ -59,7 +59,7 @@ li a:hover {
 @media screen and (min-width: 1025px) {
     .bg-image {
         /* The image used */
-        background-image: url("/img/composited.png");
+        background-image: url("../img/composited.png");
 
         /* Full height */
         height: 100%;
