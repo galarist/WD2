@@ -10,15 +10,18 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    padding: 10px;
     background-color: transparent;
     display: inline-flex;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #eacaca;
 }
 
 ul li {
     margin: 0 8px;
+    padding: 10px;
 }
 
 li a {
@@ -27,14 +30,60 @@ li a {
     color: #2c2c2c;
     font-weight: 700;
     font-size: 18px;
+    outline: none;
 }
 
 li:first-of-type a {
-    background-color: gray;
+    background-color: #171717;
     color: honeydew;
     border-radius: 3px;
 }
 
 li a:hover {
     text-decoration: underline;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("/img/composited_mobile.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1025px) {
+    .bg-image {
+        /* The image used */
+        background-image: url("/img/composited.png");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.bg-text {
+    background-color: rgb(31, 31, 31);
+    /* Fallback color */
+    background-color: rgba(20, 20, 20, 0.8);
+    /* Black w/opacity/see-through */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    width: initial;
+    height: 100%;
+    text-align: center;
+    font-weight: 900;
 }
