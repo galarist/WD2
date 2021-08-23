@@ -1,7 +1,8 @@
 body {
     margin: 0;
     width: 100vw;
-    background-color: #e4caca;
+    height: 100vh;
+    background-color: #eacaca;
 }
 
 ul {
@@ -17,13 +18,23 @@ ul {
 }
 
 ul li {
-    margin: 4px;
+    margin: 0 8px;
 }
 
 li a {
-    display: inline-block;
     padding: 8px;
     text-decoration: none;
     color: #2c2c2c;
     font-weight: 700;
+    font-size: 18px;
+}
+
+li:first-of-type a {
+    background-color: gray;
+    color: honeydew;
+    border-radius: 3px;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
