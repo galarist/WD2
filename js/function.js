@@ -12,7 +12,7 @@ document.write(`
         <div class="bg-image">
             <div class="bg-text">
                 <h1>ABC Optical</h1>
-                <h2>We sell ophthalmic glasses, sunglasses and contact lenses. We specialise in optical requirements for children.</h2>
+                <h4>We sell ophthalmic glasses, sunglasses and contact lenses. We specialise in optical requirements for children.</h4>
 
                 <img src="img/logo.png" alt="">
             </div>
