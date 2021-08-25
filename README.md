@@ -2,3 +2,4 @@
 ## Image Sources:
 * https://unsplash.com/photos/yQpSxKF_ELA
 * https://unsplash.com/photos/PnsfHpDrY5o
+* https://www.logologo.com/logo.php?id=343
