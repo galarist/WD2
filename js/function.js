@@ -12,6 +12,9 @@ document.write(`
         <div class="bg-image">
             <div class="bg-text">
                 <h1>ABC Optical</h1>
+                <h2>We sell ophthalmic glasses, sunglasses and contact lenses. We specialise in optical requirements for children.</h2>
+
+                <img src="img/logo.png" alt="">
             </div>
         </div>
     </header>
@@ -27,7 +30,7 @@ document.write(`
             <a href="./book.html">Booking</a>
         </li>
         <li>
-            <a href="./aboutus.html">About</a>
+            <a href="./blog.html">Blog</a>
         </li>
         <li>
             <a href="./contact.html">Contact</a>
