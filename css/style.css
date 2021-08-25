@@ -10,9 +10,20 @@ body {
     background-color: #eacaca;
 }
 
+header {
+    display: none;
+}
+
+img {
+    width: 80%;
+}
+
+.bg-text h1:first-letter {
+    text-decoration: underline;
+}
+
 nav {
     overflow: hidden;
-
     transition: all 0.4s;
 }
 
@@ -20,7 +31,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    min-height: 80px;
+    min-height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,8 +66,6 @@ li a:hover {
     text-decoration: underline;
 }
 
-
-
 #nav.fixed {
     position: fixed;
     top: 0;
@@ -72,42 +81,8 @@ li a:hover {
     font-size: 16px;
 }
 
-.bg-image {
-    /* The image used */
-    background-image: url("../img/composited_mobile.png");
-
-    /* Full height */
-    height: 50vh;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-text {
-    background-color: rgba(20, 20, 20, 0.8);
-    /* Black w/opacity/see-through */
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    width: initial;
-    height: 100%;
-    text-align: center;
-    font-weight: 800;
-    font-size: 1.6rem;
-    padding: 0 10vw;
-}
-
-.bg-text h1:first-letter {
-    text-decoration: underline;
-}
-
 .main {
-    margin-top: 150px;
+    margin-top: 100px;
     padding: 0 5vw 100px;
     font-size: 1.8rem;
     text-align: center;
@@ -115,6 +90,40 @@ li a:hover {
 }
 
 @media screen and (min-width: 1025px) {
+    header {
+        display: block;
+    }
+
+    .bg-image {
+        /* The image used */
+        background-image: url("../img/composited_mobile.png");
+
+        /* Full height */
+        height: 100vh;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg-text {
+        background-color: rgba(20, 20, 20, 0.8);
+        /* Black w/opacity/see-through */
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        width: initial;
+        height: 100%;
+        text-align: center;
+        font-weight: 800;
+        font-size: 1.6rem;
+        padding: 0 10vw;
+    }
+
     .bg-image {
         /* The image used */
         background-image: url("../img/composited.png");
