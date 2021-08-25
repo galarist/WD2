@@ -1,13 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     max-width: 100vw;
-    max-width:100%;
+    max-width: 100%;
     height: 100vh;
     background-color: #eacaca;
 }
 
 nav {
     overflow: hidden;
+
+    transition: all 0.4s;
 }
 
 ul {
@@ -36,6 +42,7 @@ li a {
     font-weight: 700;
     font-size: 18px;
     outline: none;
+    transition: all 0.4s;
 }
 
 li:first-of-type a {
@@ -48,19 +55,29 @@ li a:hover {
     text-decoration: underline;
 }
 
+
+
 #nav.fixed {
     position: fixed;
     top: 0;
-    background-color: rgba(20, 20, 20, 1);
-  }
+    background-color: #171717;
+    z-index: 1;
+}
 
+#nav.fixed ul {
+    min-height: 40px;
+}
+
+#nav.fixed ul li a {
+    font-size: 16px;
+}
 
 .bg-image {
     /* The image used */
     background-image: url("../img/composited_mobile.png");
 
     /* Full height */
-    height: 60vh;
+    height: 50vh;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -90,8 +107,8 @@ li a:hover {
 }
 
 .main {
-    margin-top: 80px;
-    padding: 0 5vw 150px;
+    margin-top: 150px;
+    padding: 0 5vw 100px;
     font-size: 1.8rem;
     text-align: center;
     position: relative;

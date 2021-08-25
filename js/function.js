@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function () {
-    var elementTarget = document.getElementById("section-2");
+    var elementTarget = document.getElementById("header");
     if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
         document.getElementById('nav').classList.add('fixed');
     } else {
@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
 });
 
 document.write(`
-    <header id="section-2">
+    <header id="header">
         <div class="bg-image">
             <div class="bg-text">
                 <h1>ABC Optical</h1>
