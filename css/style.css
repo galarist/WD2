@@ -15,7 +15,7 @@ header {
 }
 
 img {
-    width: 80%;
+    display: block;
 }
 
 .bg-text h1:first-letter {
@@ -89,14 +89,28 @@ li a:hover {
     position: relative;
 }
 
+.brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands > img {
+    width: 20%;
+}
+
 @media screen and (min-width: 1025px) {
     header {
         display: block;
     }
 
+    ul {
+        position: relative;
+    }
+
     .bg-image {
         /* The image used */
-        background-image: url("../img/composited_mobile.png");
+        background-image: url("../img/composited.png");
 
         /* Full height */
         height: 100vh;
@@ -124,8 +138,14 @@ li a:hover {
         padding: 0 10vw;
     }
 
-    .bg-image {
-        /* The image used */
-        background-image: url("../img/composited.png");
+    .brands {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
+
+    .brands > img {
+        width: 18vw;
+    }
+
 }
