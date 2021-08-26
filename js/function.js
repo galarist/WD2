@@ -9,13 +9,13 @@ window.addEventListener("scroll", function () {
 
 function openFunction(x) {
     x.classList.toggle("change");
-    var element = document.getElementById("myDIV");
+    var element = document.getElementById("dropdownContent");
     element.classList.add("mystyle");
 }
 
 function closeFunction(x) {
     x.classList.toggle("change");
-    var element = document.getElementById("myDIV");
+    var element = document.getElementById("dropdownContent");
     element.classList.remove("mystyle");
 }
 
@@ -36,7 +36,7 @@ document.write(`
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-        <div id="myDIV" class="dropdown-content">
+        <div id="dropdownContent" class="dropdown-content">
         <ul>
             <li>
                 <a href="./">Home</a>
@@ -56,6 +56,8 @@ document.write(`
         </ul>
         </div>
     </div>
+    <div class="name">ABC Optical</div>
+    <a class="tinyLogo" href="./"><img src="img/tiny_logo.png" alt="Tiny Logo"></a>
         <li>
             <a href="./">Home</a>
         </li>
