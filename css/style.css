@@ -186,7 +186,7 @@ input:checked ~ .dropdown-content {
     width: 50%;
 }
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 961px) {
     .name, .tinyLogo {
         display: none;
     }
