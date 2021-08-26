@@ -7,17 +7,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-function triggerFunction(x) {
-    x.classList.toggle("change");
-    if (x.classList.contains("change")) {
-        var element = document.getElementById("dropdownContent");
-        element.classList.add("mystyle");
-    } else {
-        var element = document.getElementById("dropdownContent");
-        element.classList.remove("mystyle");
-    }
-}
-
 document.write(`
     <header id="header">
         <div class="bg-image">
@@ -28,13 +17,16 @@ document.write(`
             </div>
         </div>
     </header>
-    <nav id="nav">
+
+    <nav id="nav" role="navigation">
     <ul>
-    <div class="container" onclick="triggerFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <div id="dropdownContent" class="dropdown-content">
+    <div id="bar" class="container">
+    <label for="checkbox">
+        <input id="checkbox" type="checkbox" >
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="dropdown-content">
         <ul>
             <li>
                 <a href="./">Home</a>
@@ -53,6 +45,7 @@ document.write(`
             </li>
         </ul>
         </div>
+        </label>
     </div>
     <div class="name">ABC Optical</div>
     <a class="tinyLogo" href="./"><img src="img/tiny_logo.png" alt="Tiny Logo"></a>

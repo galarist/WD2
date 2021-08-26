@@ -43,9 +43,14 @@ ul > .tinyLogo {
     cursor: pointer;
 }
 
+#checkbox {
+    display: none;
+}
+
 .bar1,
 .bar2,
-.bar3 {
+.bar3,
+#checkbox {
     width: 35px;
     height: 5px;
     background-color: honeydew;
@@ -55,18 +60,18 @@ ul > .tinyLogo {
 }
 
 /* Rotate first bar */
-.change .bar1 {
+input:checked ~ .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
-.change .bar2 {
+input:checked ~ .bar2 {
     opacity: 0;
 }
 
 /* Rotate last bar */
-.change .bar3 {
+input:checked ~ .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
@@ -95,7 +100,7 @@ ul > .tinyLogo {
     margin-top: 24px;
 }
 
-.mystyle {
+input:checked ~ .dropdown-content {
     display: block;
     position: fixed;
 }
