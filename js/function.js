@@ -7,15 +7,16 @@ window.addEventListener("scroll", function () {
     }
 });
 
-function myFunction(x) {
+function openFunction(x) {
     x.classList.toggle("change");
-    if (x.classList.contains("change")) {
-        var element = document.getElementById("myDIV");
-        element.classList.add("mystyle");
-    } else {
-        var element = document.getElementById("myDIV");
-        element.classList.remove("mystyle");
-    }
+    var element = document.getElementById("myDIV");
+    element.classList.add("mystyle");
+}
+
+function closeFunction(x) {
+    x.classList.toggle("change");
+    var element = document.getElementById("myDIV");
+    element.classList.remove("mystyle");
 }
 
 
@@ -31,7 +32,7 @@ document.write(`
     </header>
     <nav id="nav">
     <ul>
-    <div class="container" onmouseover="myFunction(this)">
+    <div class="container" onmouseenter="openFunction(this)" onmouseleave="closeFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
