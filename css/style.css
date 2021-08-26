@@ -197,7 +197,7 @@ ul > .tinyLogo {
     }
 
     #nav.fixed {
-        position: fixed;
+        position: relative;
     }
 
     .container {
