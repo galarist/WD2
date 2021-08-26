@@ -151,11 +151,14 @@ input:checked ~ .dropdown-content {
 }
 
 .main {
-    margin-top: 100px;
-    padding: 0 5vw 100px;
+    padding: 4.5em 5vw;
     font-size: 1.6rem;
     text-align: center;
     position: relative;
+}
+
+.main.fixed {
+    margin-top: 180px;
 }
 
 #services ul {
