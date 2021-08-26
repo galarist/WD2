@@ -25,7 +25,6 @@ document.write(`
             <div class="bg-text">
                 <h1>ABC Optical</h1>
                 <h2>We sell ophthalmic glasses, sunglasses and contact lenses. We specialise in optical requirements for children.</h2>
-
                 <img src="img/logo.png" alt="">
             </div>
         </div>
@@ -56,7 +55,6 @@ document.write(`
         </ul>
         </div>
     </div>
-    <ul>
         <li>
             <a href="./">Home</a>
         </li>
