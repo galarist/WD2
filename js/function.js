@@ -7,18 +7,16 @@ window.addEventListener("scroll", function () {
     }
 });
 
-function openFunction(x) {
+function triggerFunction(x) {
     x.classList.toggle("change");
-    var element = document.getElementById("dropdownContent");
-    element.classList.add("mystyle");
+    if (x.classList.contains("change")) {
+        var element = document.getElementById("dropdownContent");
+        element.classList.add("mystyle");
+    } else {
+        var element = document.getElementById("dropdownContent");
+        element.classList.remove("mystyle");
+    }
 }
-
-function closeFunction(x) {
-    x.classList.toggle("change");
-    var element = document.getElementById("dropdownContent");
-    element.classList.remove("mystyle");
-}
-
 
 document.write(`
     <header id="header">
@@ -32,7 +30,7 @@ document.write(`
     </header>
     <nav id="nav">
     <ul>
-    <div class="container" onmouseenter="openFunction(this)" onmouseleave="closeFunction(this)">
+    <div class="container" onclick="triggerFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
