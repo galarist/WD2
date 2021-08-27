@@ -238,7 +238,7 @@ article {
     grid-template-rows: 170px 300px 100px;
     /* The grid-template-columns CSS property 
     defines the line names and track sizing functions of the grid columns. */
-    grid-template-columns: 280px 300px 100px; 
+    grid-template-columns: 3000px 300px 100px; 
     grid-gap: 3px;
     margin: 10px 2px;
     background-color: #503f3f;
