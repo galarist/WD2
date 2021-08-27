@@ -1,12 +1,3 @@
-window.addEventListener("scroll", function () {
-    var elementTarget = document.getElementById("header");
-    if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-        document.getElementById('nav').classList.add('fixed');
-    } else {
-        document.getElementById('nav').classList.remove('fixed');
-    }
-});
-
 document.write(`
     <header id="header">
         <div class="bg-image">
@@ -17,38 +8,38 @@ document.write(`
             </div>
         </div>
     </header>
-
-    <nav id="nav" role="navigation">
-    <ul>
-    <div id="bar" class="container">
-    <label for="checkbox">
+    <nav id="nav">
+    <div id="mobileNav"><div id="bar" class="container">
         <input id="checkbox" type="checkbox" >
         <div class="bar bar1"></div>
         <div class="bar bar2"></div>
         <div class="bar bar3"></div>
         <div class="dropdown-content">
-        <ul>
-            <li>
-                <a href="./">Home</a>
-            </li>
-            <li>
-                <a href="./details.html">Details</a>
-            </li>
-            <li>
-                <a href="./book.html">Booking</a>
-            </li>
-            <li>
-                <a href="./blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="./contact.html">Contact</a>
-            </li>
-        </ul>
+            <div class="mobileLinks">
+            <ul>
+                <li>
+                    <a href="./">Home</a>
+                </li>
+                <li>
+                    <a href="./details.html">Details</a>
+                </li>
+                <li>
+                    <a href="./book.html">Booking</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
         </div>
-        </label>
     </div>
     <div class="name">ABC Optical</div>
-    <a class="tinyLogo" href="./"><img src="img/tiny_logo.png" alt="Tiny Logo"></a>
+    <div class="liLogo"><a class="tinyLogo" href="./"><img src="img/tiny_logo.png" alt="Tiny Logo"></a></div>
+    </div>
+    <ul id="webNav">
         <li>
             <a href="./">Home</a>
         </li>
