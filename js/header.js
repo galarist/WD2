@@ -15,25 +15,23 @@ document.write(`
     <div class="bar bar2"></div>
     <div class="bar bar3"></div>
     <div class="dropdown-content">
-        <div class="mobileLinks">
-        <ul>
-            <li>
-                <a href="./">Home</a>
-            </li>
-            <li>
-                <a href="./products.html">Products</a>
-            </li>
-            <li>
-                <a href="./book.html">Booking</a>
-            </li>
-            <li>
-                <a href="./blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="./contact.html">Contact</a>
-            </li>
-        </ul>
-        </div>
+    <ul>
+        <li>
+            <a href="./">Home</a>
+        </li>
+        <li>
+            <a href="./products.html">Products</a>
+        </li>
+        <li>
+            <a href="./book.html">Booking</a>
+        </li>
+        <li>
+            <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+    </ul>
     </div>
 </div>
 <div class="name">ABC Optical</div>
