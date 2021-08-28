@@ -49,21 +49,6 @@ ul>.tinyLogo {
     margin-right: 20px;
 }
 
-#webNav {
-    display: none;
-}
-
-#nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vw;
-    background-color: #171717;
-    max-width: 100vw;
-}
-
 #nav #mobileNav {
     display: flex;
     position: fixed;
@@ -73,6 +58,10 @@ ul>.tinyLogo {
     width: 100vw;
     align-items: center;
     height: 80px;
+}
+
+#mobileNav li {
+    padding: 4px;
 }
 
 #mobileNav a {
@@ -152,8 +141,23 @@ input:checked~.bar3 {
 }
 
 input:checked~.dropdown-content {
-    max-height: 215px;
+    max-height: 400px;
     transition: max-height 0.3s ease-in;
+}
+
+#webNav {
+    display: none;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    background-color: #171717;
+    max-width: 100vw;
 }
 
 #nav ul li {
