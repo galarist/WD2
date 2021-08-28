@@ -189,7 +189,7 @@ input:checked~.dropdown-content {
 }
 
 .main {
-    padding: 4.5em 5vw;
+    padding: 4.5em 0;
     font-size: 1.6rem;
     text-align: center;
     position: relative;
@@ -226,7 +226,7 @@ section {
 }
 
 article {
-    max-width: 280px;
+    max-width: 260px;
     position: relative;
     box-sizing: border-box;
     text-align: center;
@@ -238,7 +238,7 @@ article {
     grid-template-rows: 220px 300px 100px;
     /* The grid-template-columns CSS property 
     defines the line names and track sizing functions of the grid columns. */
-    grid-template-columns: 280px 300px 100px; 
+    grid-template-columns: 260px 300px 100px;
     grid-gap: 3px;
     margin: 10px 2px;
     background-color: #503f3f;
@@ -249,10 +249,13 @@ article {
 article div div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 18px;
 }
 
 @media (min-width: 961px) {
+
     .name,
     .tinyLogo,
     .liLogo,
