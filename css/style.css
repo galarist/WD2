@@ -66,7 +66,8 @@ ul>.tinyLogo {
 
 #mobileNav li a {
     margin: 6px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100px;
     margin: 0 auto;
     font-size: 1.5rem !important;
@@ -128,13 +129,14 @@ input:checked~.bar3 {
 }
 
 .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: honeydew;
     max-width: 100vw;
     z-index: 1;
     margin-top: 20px;
     max-height: 0;
-    transition: max-height 0.25s ease-out;
+    transition: max-height 0.5s ease-out;
     overflow: hidden;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -142,7 +144,7 @@ input:checked~.bar3 {
 
 input:checked~.dropdown-content {
     max-height: 400px;
-    transition: max-height 0.3s ease-in;
+    transition: max-height 0.6s ease-in;
 }
 
 #webNav {
@@ -196,7 +198,7 @@ input:checked~.dropdown-content {
     text-align: left;
     display: grid;
     grid-template-columns: repeat(1, 82vw);
-    gap: 10px;
+    gap: 28px;
     padding: 0 10px;
     justify-content: center;
     padding-left: 1em;
@@ -249,6 +251,22 @@ article div div {
     justify-content: center;
     align-items: center;
     padding: 18px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.openingHours {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.openingHours ul {
+    list-style-type: none;
+    text-align: left;
 }
 
 form {
@@ -323,13 +341,39 @@ aside img {
     margin: 0 auto;
 }
 
+footer {
+    text-align: center;
+    background-color: #171717;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+footer h3,
+footer h3 a {
+    color: honeydew;
+}
+
+footer ul,
+footer span,
+footer h3 u,
+footer h3:nth-of-type(2),
+footer hr,
+h3 p,
+br,
+footer h3 p b {
+    display: none;
+}
 
 @media (min-width: 961px) {
 
     .name,
     .tinyLogo,
     .liLogo,
-    #mobileNav {
+    .container,
+    #mobileNav,
+    footer h3 a {
         display: none !important;
     }
 
@@ -361,17 +405,11 @@ aside img {
         font-size: 1.6rem;
     }
 
-    .container {
-        display: none;
-    }
-
     .bg-image {
         /* The image used */
         background-image: url("../img/composited.png");
         /* Full height */
         height: 100vh;
-        -webkit-filter: grayscale(100%);
-        filter: gray;
         filter: blur(1.3px);
         -o-filter: blur(1.3px);
         -ms-filter: blur(1.3px);
@@ -485,5 +523,41 @@ aside img {
     aside {
         text-align: left;
         max-width: 300px;
+    }
+
+    footer span {
+        display: inline-flex;
+    }
+
+    footer,
+    footer h3,
+    footer h3 u,
+    footer hr,
+    h3 p,
+    br,
+    footer h3 p b {
+        display: block !important;
+    }
+
+    footer div {
+        display: inline-flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    footer ul {
+        padding-left: 30px;
+        text-align: left;
+        display: block;
+    }
+
+    footer ul ul {
+        padding-left: 20px;
+        color: honeydew;
+    }
+
+    footer li,
+    footer li a {
+        color: ivory;
     }
 }
