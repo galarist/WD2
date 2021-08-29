@@ -293,6 +293,11 @@ aside {
     text-align: center;
     padding: 10px;
 }
+aside img {
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 @media (min-width: 961px) {
 
