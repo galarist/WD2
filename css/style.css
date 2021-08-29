@@ -251,6 +251,39 @@ article div div {
     padding: 18px;
 }
 
+form {
+    padding: 15px;
+}
+
+form label {
+    display: none;
+}
+
+form input {
+    display: flex;
+    height: 30px;
+    width: 200px;
+    max-width: 600px;
+    justify-content: center;
+    border: 1px solid;
+    margin: 2em auto;
+}
+
+form input[type=submit] {
+    background-color: #171717;
+    border: none;
+    color: honeydew;
+    height: 40px;
+    width: 250px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 4vw;
+}
+
+form textarea {
+    border: 0;
+}
+
 @media (min-width: 961px) {
 
     .name,
@@ -343,5 +376,56 @@ article div div {
 
     .brands>img {
         width: 18vw;
+    }
+
+    form label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    ::-webkit-input-placeholder {
+        /* WebKit browsers */
+         color: transparent;
+    }
+     :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+         color: transparent;
+    }
+     ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+         color: transparent;
+    }
+     :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+         color: transparent;
+    }
+     input::placeholder {
+         color: transparent;
+    }
+     textarea::-webkit-input-placeholder {
+        /* WebKit browsers */
+         color: transparent;
+    }
+     textarea:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+         color: transparent;
+    }
+     textarea::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+         color: transparent;
+    }
+     textarea:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+         color: transparent;
+    }
+     textarea::placeholder {
+         color: transparent;
+    }
+
+    form input[type=submit] {
+        font-size: inherit;
     }
 }
