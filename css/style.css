@@ -284,6 +284,16 @@ form textarea {
     border: 0;
 }
 
+main {
+    display: block;
+    margin: 10px;
+}
+
+aside {
+    text-align: center;
+    padding: 10px;
+}
+
 @media (min-width: 961px) {
 
     .name,
@@ -427,5 +437,14 @@ form textarea {
 
     form input[type=submit] {
         font-size: inherit;
+    }
+
+    .blog {
+        display: flex;
+    }
+
+    aside {
+        text-align: left;
+        max-width: 300px;
     }
 }
