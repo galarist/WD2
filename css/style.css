@@ -186,7 +186,7 @@ input:checked~.dropdown-content {
 }
 
 .main {
-    margin: 4.5em 5vw;
+    margin: 4.5em 0;
     font-size: 1.6rem;
     text-align: center;
     position: relative;
@@ -325,6 +325,10 @@ article div div {
         font-weight: 800;
         font-size: 1.6rem;
         padding: 0 10vw;
+    }
+
+    .main {
+        margin: 4.5em 5vw;
     }
 
     #services ul {
