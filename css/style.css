@@ -64,7 +64,7 @@ ul>.tinyLogo {
     padding: 4px;
 }
 
-#mobileNav a {
+#mobileNav li a {
     margin: 6px;
     display: block;
     width: 100px;
@@ -186,7 +186,7 @@ input:checked~.dropdown-content {
 }
 
 .main {
-    padding: 4.5em 0;
+    margin: 4.5em 5vw;
     font-size: 1.6rem;
     text-align: center;
     position: relative;
