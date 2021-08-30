@@ -188,7 +188,7 @@ input:checked~.dropdown-content {
 }
 
 .main {
-    margin: 4.5em 0;
+    padding: 4.5em 0;
     font-size: 1.6rem;
     text-align: center;
     position: relative;
@@ -405,20 +405,30 @@ footer h3 p b {
         font-size: 1.6rem;
     }
 
-    .bg-image {
+    .bg-image::after {
+        content: "";
+        display: block;
+        position: sticky;
+        inset: 0;
+        max-width: 100%;
+        min-height: 100%;
+        z-index: -1;
         /* The image used */
         background-image: url("../img/composited.png");
-        /* Full height */
-        height: 100vh;
-        filter: blur(1.3px);
-        -o-filter: blur(1.3px);
-        -ms-filter: blur(1.3px);
-        -moz-filter: blur(1.3px);
-        -webkit-filter: blur(1.3px);
         /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        
+        filter: blur(2.3px);
+        -o-filter: blur(2.3px);
+        -ms-filter: blur(2.3px);
+        -moz-filter: blur(2.3px);
+        -webkit-filter: blur(2.3px);
+    }
+
+    .bg-image {
+        height: 100vh;
     }
 
     .bg-text {
@@ -431,7 +441,7 @@ footer h3 p b {
         align-items: center;
         z-index: 2;
         width: initial;
-        height: 100%;
+        min-height: 100%;
         text-align: center;
         font-weight: 800;
         font-size: 1.6rem;
@@ -439,7 +449,8 @@ footer h3 p b {
     }
 
     .main {
-        margin: 4.5em 5vw;
+        padding: 4.5em 5vw;
+        background-color: #eacaca;
     }
 
     #services ul {
