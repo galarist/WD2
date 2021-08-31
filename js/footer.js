@@ -16,7 +16,7 @@ document.write (`
     </div>
     <div>
         <ul>
-            <li><a href="/products.html">Products</a>
+            <li><a href="./products.html">Products</a>
                 <ul>
                     <li>Ray-Ban</li>
                     <li>Disney Eyewear</li>
