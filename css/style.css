@@ -331,6 +331,24 @@ main {
     margin: 10px;
 }
 
+.subscription {
+    display: inline-flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription input {
+    height: 36px;
+    outline: none;
+    margin: 0;
+}
+
+.subscription #subButton {
+    width: 150px;
+}
+
 aside {
     text-align: center;
     padding: 10px;
@@ -419,7 +437,7 @@ footer h3 p b {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        
+
         filter: blur(2.3px);
         -o-filter: blur(2.3px);
         -ms-filter: blur(2.3px);
@@ -529,6 +547,10 @@ footer h3 p b {
 
     .blog {
         display: flex;
+    }
+
+    .subscription {
+        flex-direction: row;
     }
 
     aside {
