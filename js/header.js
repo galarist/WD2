@@ -39,19 +39,19 @@ document.write(`
 </div>
 <ul id="webNav">
     <li>
-        <a href="./">Home</a>
+        <a href="./" accesskey="h">Home</a>
     </li>
     <li>
-        <a href="./products.html">Products</a>
+        <a href="./products.html" accesskey="p">Products</a>
     </li>
     <li>
-        <a href="./book.html">Booking</a>
+        <a href="./book.html" accesskey="b">Booking</a>
     </li>
     <li>
-        <a href="./blog.html">Blog</a>
+        <a href="./blog.html" accesskey="l">Blog</a>
     </li>
     <li>
-        <a href="./contact.html">Contact</a>
+        <a href="./contact.html" accesskey="c">Contact</a>
     </li>
 </ul>
 </nav>
